@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class intreverse {
+    public static void main(String[] ages){
+        int number;
+        Scanner input =new Scanner(System.in);
+        System.out.println("请输入整数");
+        number = input.nextInt();   //接收整数串
+        number = number*10;         //将整数串乘以10方便循环
+        int num = 0;                //将余出来的数字放入num中输出
+        System.out.println("反转后数字为:");
+        while (number/10>0){        //前面乘以10，为了去除0，除以10
+            number = number/10;
+            num = number%10;
+            System.out.print(num);
+        }
+    }
+}
